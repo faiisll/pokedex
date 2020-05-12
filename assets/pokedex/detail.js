@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
 console.log(id);
 
-if(id.length < 1 || isNaN(id) || id < 1){
+if(id.length < 1 || isNaN(id) || id < 1 || id === null){
     window.location.replace("https://faiisll.github.io/pokedex/");
 }
 
@@ -41,7 +41,7 @@ const setDescPokemon = async () => {
         str = await str + `${desc[i].flavor_text} `;
     }
     document.getElementById('desc').innerHTML = await str;
-    console.log(await desc);
+    //console.log(await desc);
 }
 
 setTimeout(async () =>{
