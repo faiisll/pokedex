@@ -29,7 +29,7 @@ const getList = async (offset = 1, limit = 20) =>{
         </td>
 
         <td class="text-right">
-          <a class="btn btn-sm btn-icon-only text-light" href="https://faiisll.github.io/pokedex?id=${p.id}" role="button">
+          <a class="btn btn-sm btn-icon-only text-light" href="https://faiisll.github.io/pokedex/detail?id=${p.id}" role="button">
             <i class="fas fa-info"></i>
           </a>
         </td>
