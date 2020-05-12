@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
 console.log(id);
 
-if(id.length < 1 || isNaN(id) || id < 1 || id === null){
+if(!id){
     window.location.replace("https://faiisll.github.io/pokedex/");
 }
 
