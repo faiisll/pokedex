@@ -4,6 +4,10 @@ const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
 console.log(id);
 
+if(id.length < 1 || isNaN(id) || id < 1){
+    window.location.replace("https://faiisll.github.io/pokedex/");
+}
+
 const setDataPokemon = async () =>{
     let data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     data = await data.json();
